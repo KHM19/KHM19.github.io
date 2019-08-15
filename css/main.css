@@ -1719,7 +1719,7 @@ body.menu-is-open {
   margin-bottom: 7.2rem;
   margin-top: 1.2rem;
   padding-right: 140px;
-  color: #793ea5;
+  color: #fa5800;
   position: relative;
 }
 
@@ -1728,7 +1728,7 @@ body.menu-is-open {
   display: block;
   height: 1px;
   width: 110px;
-  background-color: #793ea5;
+  background-color: #fa5800;
   position: absolute;
   top: 50%;
   right: 0;
@@ -1773,7 +1773,9 @@ body.menu-is-open {
   position: relative;
 }
 
-.header-nav__list a::before {
+/*number iddan olle setup*/ 
+
+/* .header-nav__list a::before {
   display: block;
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
@@ -1783,7 +1785,7 @@ body.menu-is-open {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
-}
+} */
 
 .header-nav__list a:hover::before {
   color: #fa5800;
@@ -1903,8 +1905,10 @@ body.menu-is-open {
 }
 
 .header-menu-toggle.opaque {
-  background-color: #000000;
+  background-color: #fa5800;
 }
+
+
 
 .header-menu-icon {
   display: block;

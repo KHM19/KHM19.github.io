@@ -1,9 +1,5 @@
-/* =================================================================== 
- *
- *  Sublime v1.0 Main Stylesheet
- *  06-10-2018
- *  ------------------------------------------------------------------
- *
+/* =================================================================== ---------------------------------------------------
+ *KHM
  *  TOC:
  *  # base style overrides
  *    ## links
@@ -1671,7 +1667,7 @@ body.menu-is-open {
 
 .header-logo img {
   width: 155px;
-  height: 36px;
+  height: 60px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1683,7 +1679,7 @@ body.menu-is-open {
   line-height: 1.875;
   padding: 3.6rem 3rem 3.6rem 6rem;
   height: 100%;
-  width: 50%;
+  width: 30%;
   background: #0C0C0C;
   color: rgba(255, 255, 255, 0.25);
   overflow-y: auto;
@@ -1790,11 +1786,11 @@ body.menu-is-open {
 }
 
 .header-nav__list a:hover::before {
-  color: #793ea5;
+  color: #fa5800;
 }
 
 .header-nav__list .current a::before {
-  color: #793ea5;
+  color:  #fa5800;
 }
 
 .header-nav__social {
@@ -1997,7 +1993,8 @@ body.menu-is-open {
 
 @media only screen and (max-width:600px) {
   .s-header {
-    height: 90px;
+    height: 80px;
+    width:100px;
     top: 12px;
   }
 

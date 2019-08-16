@@ -3686,6 +3686,25 @@ html.no-csstransitions .home-content__main {
   height: 100%;
   border-radius: 10%;
 }
+
+.block1{
+  background-image: url(../images/Ajay.jpg);
+}
+.block2{
+  background-image: url(../images/vishnu.jpeg);
+}
+.block3{
+  background-image: url(../images/Sreehari.jpg);
+}
+.block4{
+  background-image: url(../images/Asish.jpg);
+}
+.block5{
+  background-image: url(../images/Shylesh.jpg);
+}
+.block6{
+  background-image: url(../images/Aparna.jpg);
+}
 .contact_content{
   height:30%;
   width:100%;

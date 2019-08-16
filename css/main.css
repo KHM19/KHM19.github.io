@@ -3616,8 +3616,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
  .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 325px;
+  height: 400px;
   perspective: 1000px;
   
 }
@@ -3654,9 +3654,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   transform: rotateY(180deg);
+  justify-content: center
 }
 .s-contact {
   padding-top: 16.2rem;
@@ -3678,8 +3679,39 @@ html.no-csstransitions .home-content__main {
   grid-template-columns: auto auto auto;
 }
 .contact_image{
+  background-image: url(../images/vishnu.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 100%;
   border-radius: 10%;
+}
+.contact_content{
+  height:30%;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+.contact_name_front{
+  color: #fff;
+  position: relative;
+  bottom: 0;
+}
+.contact_name_back{
+  color:rgb(0, 0, 0);
+}
+.contact_back_image{
+  padding-left:5%;
+  height:65%;
+  width:35%;
+  border-radius: 50%;
+  float: left;
+}
+.contact_back_details{
+  font-weight: 700;
+  justify-content: center;
+  padding-top: 30%;
 }
 /* ------------------------------------------------------------------- 
  * responsive:

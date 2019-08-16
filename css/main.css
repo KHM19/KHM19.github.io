@@ -3401,10 +3401,17 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 21rem;
   text-align: center;
   position: relative;
-  background-image: url(../images/hero-bg.jpg);
+	background:url(https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?cs=srgb&dl=birds-cold-conifer-917494.jpg&fm=jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+#transparent_box_testimonials{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 60px;
+
 }
 
 .s-testimonials::before {
@@ -3416,7 +3423,7 @@ html.no-csstransitions .home-content__main {
   width: 100%;
   height: 100%;
   opacity: .9;
-  background-color: #111111;
+  /* background-color: #272222; */
 }
 
 .testimonials__icon {
@@ -3428,7 +3435,7 @@ html.no-csstransitions .home-content__main {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 15rem;
+  top: 17rem;
   left: 50%;
   margin-left: -2.25rem;
 }
@@ -3610,14 +3617,14 @@ html.no-csstransitions .home-content__main {
 .s-contact {
   padding-top: 16.2rem;
   padding-bottom: 21rem;
-  background-color: #ffa800;
+  /* background-color: #ffa800; */
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   position: relative;
 }
 
 .s-contact a {
-  color: #FFFFFF;
+  color: rgb(0, 0, 0);
 }
 
 .s-contact .grid-overlay {
@@ -3629,7 +3636,7 @@ html.no-csstransitions .home-content__main {
 .s-contact .grid-overlay > div,
 .s-contact .grid-overlay::before,
 .s-contact .grid-overlay::after {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 .s-contact .subhead {
@@ -3660,13 +3667,13 @@ html.no-csstransitions .home-content__main {
   font-size: 9rem;
   font-weight: 700;
   line-height: 1.2;
-  color: #FFFFFF;
+  color: rgb(0, 0, 0);
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
 .contact-email a:hover,
 .contact-email a:focus {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------------------------------------------------------- 
@@ -3686,13 +3693,13 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-social li a {
-  color: white;
+  color: rgb(0, 0, 0);
   border: none !important;
 }
 
 .contact-social li a:hover,
 .contact-social li a:focus {
-  color: #FFFFFF;
+  color: rgb(0, 0, 0);
 }
 
 .contact-social li:last-child {

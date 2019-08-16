@@ -1702,10 +1702,14 @@ body.menu-is-open {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.header-nav a:hover,
+
 .header-nav a:focus,
 .header-nav a:active {
   color: white;
+}
+
+.header-nav a:hover{
+  color:#fa5800;
 }
 
 .header-nav h3 {
@@ -1772,6 +1776,7 @@ body.menu-is-open {
   color: #FFFFFF;
   position: relative;
 }
+
 
 /*number iddan olle setup*/ 
 
@@ -1992,6 +1997,7 @@ body.menu-is-open {
   .header-menu-toggle {
     right: 40px;
   }
+  
 
 }
 

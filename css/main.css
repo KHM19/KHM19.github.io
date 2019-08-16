@@ -3401,7 +3401,7 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 21rem;
   text-align: center;
   position: relative;
-	background:url(https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?cs=srgb&dl=birds-cold-conifer-917494.jpg&fm=jpg);
+  background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3445,7 +3445,7 @@ html.no-csstransitions .home-content__main {
   font-weight: 400;
   line-height: 1.636;
   margin-top: 7.2rem;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -3614,6 +3614,44 @@ html.no-csstransitions .home-content__main {
  * # contact
  *
  * ------------------------------------------------------------------- */
+ .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
 .s-contact {
   padding-top: 16.2rem;
   padding-bottom: 21rem;
@@ -3623,209 +3661,19 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-.s-contact a {
-  color: rgb(0, 0, 0);
-}
-
-.s-contact .grid-overlay {
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-  z-index: 2;
-}
-
-.s-contact .grid-overlay > div,
-.s-contact .grid-overlay::before,
-.s-contact .grid-overlay::after {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.s-contact .subhead {
-  color: #fa5800;
-}
-
-.s-contact .section-header,
-.s-contact .contact-main {
-  z-index: 3;
-  position: relative;
-}
-
-.contact-main {
-  font-size: 3.3rem;
-  line-height: 1.636;
-  margin-top: 9rem;
-}
-
-.contact-main [class*="contact-"] {
-  margin-bottom: 0;
-}
-
-.contact-main .contact-email {
-  margin-bottom: 3.6rem;
-}
-
-.contact-email a {
-  font-size: 9rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: rgb(0, 0, 0);
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-}
-
-.contact-email a:hover,
-.contact-email a:focus {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-}
 
 /* ------------------------------------------------------------------- 
  * ## contact social
  * ------------------------------------------------------------------- */
-.contact-social {
-  list-style: none;
-  display: inline-block;
-  margin: 4.2rem 0 0 0;
-  font-size: 4.2rem;
-}
 
-.contact-social li {
-  margin-right: 15px;
-  padding-left: 0;
-  display: inline-block;
+.contact_container{
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
-
-.contact-social li a {
-  color: rgb(0, 0, 0);
-  border: none !important;
-}
-
-.contact-social li a:hover,
-.contact-social li a:focus {
-  color: rgb(0, 0, 0);
-}
-
-.contact-social li:last-child {
-  margin: 0;
-}
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1200px) {
-  .contact-main {
-    font-size: 3.1rem;
-  }
-
-  .contact-email a {
-    font-size: 7.6rem;
-  }
-
-}
-
-@media only screen and (max-width:1000px) {
-  .s-contact {
-    padding-top: 15rem;
-    padding-bottom: 19.8rem;
-  }
-
-  .contact-main {
-    font-size: 3rem;
-  }
-
-  .contact-email a {
-    font-size: 7.2rem;
-  }
-
-}
-
-@media only screen and (max-width:900px) {
-  .contact-main {
-    font-size: 2.8rem;
-  }
-
-  .contact-email a {
-    font-size: 6.2rem;
-  }
-
-  .contact-social {
-    font-size: 4rem;
-  }
-
-}
-
-@media only screen and (max-width:800px) {
-  .contact-main {
-    font-size: 2.6rem;
-  }
-
-  .contact-email a {
-    font-size: 5.5rem;
-  }
-
-  .contact-social {
-    font-size: 3.5rem;
-  }
-
-}
-
-@media only screen and (max-width:700px) {
-  .contact-main {
-    font-size: 2.4rem;
-  }
-
-  .contact-email a {
-    font-size: 3.8rem;
-  }
-
-  .contact-social {
-    font-size: 3.2rem;
-  }
-
-}
-
-@media only screen and (max-width:600px) {
-  .s-contact {
-    padding-top: 12rem;
-    padding-bottom: 13.2rem;
-  }
-
-  .contact-main {
-    font-size: 2.1rem;
-    margin-top: 7.2rem;
-  }
-
-  .contact-social {
-    font-size: 3rem;
-  }
-
-}
-
-@media only screen and (max-width:500px) {
-  .contact-main {
-    font-size: 1.8rem;
-  }
-
-  .contact-email a {
-    font-size: 3rem;
-  }
-
-}
-
-@media only screen and (max-width:400px) {
-  .contact-main {
-    font-size: 1.6rem;
-    margin-top: 4.5rem;
-  }
-
-  .contact-email a {
-    font-size: 2.5rem;
-  }
-
-  .contact-social {
-    margin: 3rem 0 0 0;
-    font-size: 2.4rem;
-  }
-
-}
 
 /* ===================================================================
  * # footer

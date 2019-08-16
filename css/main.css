@@ -3619,7 +3619,7 @@ html.no-csstransitions .home-content__main {
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  margin:20px;
+  
 }
 
 .flip-card-inner {
@@ -3674,6 +3674,7 @@ html.no-csstransitions .home-content__main {
   align-items: center;
   justify-content: center;
   display: grid;
+  grid-gap: 35px;
   grid-template-columns: auto auto auto;
 }
 .contact_image{
@@ -3684,6 +3685,58 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
+ @media only screen and (max-width:1200px) {
+
+  .contact_container{
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width:1100px) {
+
+  .contact_container{
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width:1000px) {
+
+  .contact_container{
+    grid-template-columns: auto auto;
+  }
+
+}
+
+@media only screen and (max-width:900px) {
+  
+  .contact_container{
+    grid-template-columns: auto auto ;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .contact_container{
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .contact_container{
+    grid-template-columns: auto ;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .contact_container{
+    grid-template-columns: auto;
+  }
+
+}
+
+@media only screen and (max-width:350px) {
+  .contact_container{
+    grid-template-columns: auto;
+  }
+}
+
 
 /* ===================================================================
  * # footer

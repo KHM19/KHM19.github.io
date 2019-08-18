@@ -2097,23 +2097,6 @@ body.menu-is-open {
 .title{
   text-align: center;
 }
-.venue{
-  margin-top: 7%;
-  padding-left: 16%;
-}
-.venue .venue_icon{
-  text-align: left;
-  color: #fa5800;
-  font-size: 20px;
-  font-family: "Nunito Sans", sans-serif;
-
-}
-.venue .college{
-  text-align: left;
-  color: #FFFFFF;
-  padding-left: 1.5%;
-  font-size: 20px;
-  font-family: "Nunito Sans", sans-serif;
 
 }
 
@@ -2340,7 +2323,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h3 {
-    font-size: 3.7rem;
+    font-size: 2.7rem;
   }
 
 }
@@ -2351,14 +2334,9 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h3 {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
 
-  .home-content__video .video-icon {
-    height: 8.4rem;
-    width: 8.4rem;
-    background-size: 22px 24px;
-  }
 
 }
 
@@ -2372,7 +2350,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 
   .home-content__video {
@@ -2560,25 +2538,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h3 {
-    font-size: 1.1rem;
-  }
-  .venue{
-    padding-left: 10%;
-  }
-  .venue .venue_icon{
-    text-align: left;
-    color: #fa5800;
-    font-size: 10px;
-    font-family: "Nunito Sans", sans-serif;
-  
-  }
-  .venue .college{
-    text-align: left;
-    color: #FFFFFF;
-    padding-left: 1.5%;
-    font-size: 10px;
-    font-family: "Nunito Sans", sans-serif;
-  
+    font-size: 1rem;
   }
   
 }
@@ -2588,13 +2548,13 @@ html.no-csstransitions .home-content__main {
     min-height: 630px;
   }
   .home-content{
-    top: 0px !important;
-    }
+    top:-50px;
+  }
   .home-content h1 {
     font-size: 6.5rem;
   }
   .home-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .home-content__main {
@@ -2618,27 +2578,7 @@ html.no-csstransitions .home-content__main {
   .home-content__button {
     margin-top: 3.6rem;
   }
-  .venue{
-    margin-top: 20%;
-    padding-left: 3%;
-  }
-  .venue .venue_icon{
-    text-align: left;
-    color: #fa5800;
-    font-size: 12px;
-    font-family: "Nunito Sans", sans-serif;
-  
-  }
-  .venue .college{
-    text-align: left;
-    color: #FFFFFF;
-    to
-    padding-left: 1.5%;
-    font-size: 10px;
-    font-family: "Nunito Sans", sans-serif;
-  
-  }
-  
+
 }
 
 @media only screen and (max-width:350px) {
@@ -2652,25 +2592,6 @@ html.no-csstransitions .home-content__main {
   }
   .home-content h3{
     font-size: 1rem !important;
-  }
-  .venue{
-    margin-top: 7%;
-    padding-left: 3%;
-  }
-  .venue .venue_icon{
-    text-align: left;
-    color: #fa5800;
-    font-size: 9px !important;
-    font-family: "Nunito Sans", sans-serif;
-  
-  }
-  .venue .college{
-    text-align: left;
-    color: #FFFFFF;
-    padding-left: 1.5%;
-    font-size: 9px !important;
-    font-family: "Nunito Sans", sans-serif;
-  
   }
 }
 }

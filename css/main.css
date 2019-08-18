@@ -3359,13 +3359,6 @@ html.no-csstransitions .home-content__main {
   background-position: center center;
   background-size: cover;
 }
-#transparent_box_testimonials{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.521), 0 6px 20px 0 rgba(0, 0, 0, 0.541);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0 60px;
-
-}
 
 .s-testimonials::before {
   display: block;

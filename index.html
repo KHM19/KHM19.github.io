@@ -18,8 +18,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
 
-    <!--Font awesome-->
-    <script src="https://kit.fontawesome.com/4c017459af.js"></script>
 </head>
 
 
@@ -109,6 +107,9 @@
                 </h3>
 
             </div> <!-- end home-content__main -->
+            <div class="rellax d2" data-rellax-speed="6">
+                <img src="1.png" width="100%"/>
+          </div>
 
             <div class="home-content__scroll">
                 <a href="#about" class="scroll-link smoothscroll">
@@ -466,7 +467,7 @@
                         </p>
                         <div class="testimonials__author">
                             Joyal Johnson
-                            <span>Chair, IEEE sa SCMS</span>
+                            <span>Chair, IEEE SCMS</span>
                         </div>
                     </div> <!-- end testimonials__slide -->
                     
@@ -584,5 +585,14 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax', {
+            // center: true
+            callback: function(position) {
+                // callback every position change
+                console.log(position);
+            }
+          });
+        </script>
     
     </body>

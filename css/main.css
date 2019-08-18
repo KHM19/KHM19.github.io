@@ -2117,6 +2117,7 @@ body.menu-is-open {
   overflow: hidden;
   position: relative;
   z-index: 4;
+  top: -100px;
 }
 
 .home-content h1 {
@@ -2131,71 +2132,18 @@ body.menu-is-open {
 }
 
 .home-content h3 {
-  margin-top: 1.2rem;
+  margin-top: 0rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   line-height: 1.342;
   font-style: normal;
-  color: #9c9c9c;
+  color: #fa5800;
 }
 
 .home-content__main {
   position: relative;
   text-align: center;
-}
-
-/* ------------------------------------------------------------------- 
- * ## home video link
- * ------------------------------------------------------------------- */
-.home-content__video {
-  display: inline-block;
-  margin-top: 4.2rem;
-}
-
-.home-content__video .video-link {
-  display: block;
-  text-align: center;
-  width: 20rem;
-  outline: none;
-  position: relative;
-}
-
-.home-content__video .video-icon {
-  display: inline-block;
-  height: 9rem;
-  width: 9rem;
-  border-radius: 50%;
-  background-color: #793ea5;
-  background-image: url(../images/icons/icon-play.svg);
-  background-repeat: no-repeat;
-  background-position: 55% center;
-  background-size: 24px 27px;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.home-content__video .video-text {
-  display: inline-block;
-  text-align: center;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 1;
-  color: #9c9c9c;
-  text-transform: uppercase;
-  letter-spacing: .5rem;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  position: relative;
-}
-
-.home-content__video .video-link:hover .video-text {
-  color: white;
-}
-
-.home-content__video .video-link:hover .video-icon {
-  background-color: #6b3792;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2585,7 +2533,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:800px) {
   .home-content h1 {
-    font-size: 11.4rem;
+    font-size: rem;
   }
 
   .home-content h3 {
@@ -2694,9 +2642,14 @@ html.no-csstransitions .home-content__main {
   .s-home {
     min-height: 630px;
   }
-
+  .home-content{
+    top: -110px !important;
+    }
   .home-content h1 {
     font-size: 6.5rem;
+  }
+  .home-content h3 {
+    font-size: 1.4rem;
   }
 
   .home-content__main {
@@ -2737,7 +2690,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-about {
   padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-bottom: 1rem;
   background-color: #fff;
   position: relative;
 }
@@ -2867,8 +2820,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
   position: relative;
 }
 
@@ -3174,6 +3127,7 @@ html.no-csstransitions .home-content__main {
   content: "";
   height: 3rem;
   width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   top: -3rem;
   left: 50%;
@@ -3405,6 +3359,13 @@ html.no-csstransitions .home-content__main {
   background-position: center center;
   background-size: cover;
 }
+#transparent_box_testimonials{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.521), 0 6px 20px 0 rgba(0, 0, 0, 0.541);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 60px;
+
+}
 
 .s-testimonials::before {
   display: block;
@@ -3608,18 +3569,179 @@ html.no-csstransitions .home-content__main {
  * # contact
  *
  * ------------------------------------------------------------------- */
- 
+ .flip-card {
+  background-color: transparent;
+  width: 325px;
+  height: 400px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10%;
+
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10%;
+
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  justify-content: center
+}
+.s-contact {
+  padding-top: 16.2rem;
+  padding-bottom: 21rem;
+  /* background-color: #ffa800; */
+  color: rgba(255, 255, 255, 0.6);
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## contact social
  * ------------------------------------------------------------------- */
 
+.contact_container{
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: auto auto auto;
+}
+.contact_image{
+  background-image: url(../images/vishnu.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 10%;
+}
 
+.block1{
+  background-image: url(../images/Ajay.jpg);
+}
+.block2{
+  background-image: url(../images/vishnu.jpeg);
+}
+.block3{
+  background-image: url(../images/Sreehari.jpg);
+}
+.block4{
+  background-image: url(../images/Asish.jpg);
+}
+.block5{
+  background-image: url(../images/Shylesh.jpg);
+}
+.block6{
+  background-image: url(../images/Aparna.jpg);
+}
+.contact_content{
+  height:30%;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+.contact_name_front{
+  color: #fff;
+  position: relative;
+  bottom: 0;
+}
+.contact_name_back{
+  color:rgb(0, 0, 0);
+}
+.contact_back_image{
+  padding-left:5%;
+  height:65%;
+  width:35%;
+  border-radius: 50%;
+  float: left;
+}
+.contact_back_details{
+  font-weight: 700;
+  justify-content: center;
+  padding-top: 30%;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
- 
+ @media only screen and (max-width:1200px) {
+
+  .contact_container{
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width:1100px) {
+
+  .contact_container{
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width:1000px) {
+
+  .contact_container{
+    grid-template-columns: auto auto;
+  }
+
+}
+
+@media only screen and (max-width:900px) {
+  
+  .contact_container{
+    grid-template-columns: auto auto ;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .contact_container{
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .contact_container{
+    grid-template-columns: auto ;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .contact_container{
+    grid-template-columns: auto;
+  }
+
+}
+
+@media only screen and (max-width:350px) {
+  .contact_container{
+    grid-template-columns: auto;
+  }
+}
 
 
 /* ===================================================================

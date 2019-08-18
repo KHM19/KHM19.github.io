@@ -3389,7 +3389,7 @@ html.no-csstransitions .home-content__main {
 
 
 .testimonials__slider {
-  font-size: 3.6rem;
+  font-size: 1.9rem;
   font-weight: 400;
   line-height: 1.636;
   margin-top: 7.2rem;
@@ -3477,7 +3477,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .testimonials__slider {
-    font-size: 3.3rem;
+    font-size: 1.9rem;
   }
 
 }
@@ -3498,7 +3498,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__slider {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
 
 }
@@ -3511,7 +3511,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__slider {
-    font-size: 2.7rem;
+    font-size: 1.5rem;
   }
 
 }
@@ -3530,11 +3530,11 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__slider {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
 
   .testimonials__author {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .testimonials__author span {
@@ -3545,14 +3545,14 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:400px) {
   .testimonials__slider {
-    font-size: 2.1rem;
+    font-size: 1.3rem;
   }
 
 }
 
 @media only screen and (max-width:350px) {
   .testimonials__slider {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
 
 }

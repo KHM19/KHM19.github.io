@@ -3302,7 +3302,7 @@ html.no-csstransitions .home-content__main {
 
 
 .testimonials__slider {
-  font-size: 3.6rem;
+  font-size: 1.9rem;
   font-weight: 400;
   line-height: 1.636;
   margin-top: 7.2rem;
@@ -3390,7 +3390,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .testimonials__slider {
-    font-size: 3.3rem;
+    font-size: 1.9rem;
   }
 
 }
@@ -3411,7 +3411,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__slider {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
 
 }
@@ -3424,7 +3424,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__slider {
-    font-size: 2.7rem;
+    font-size: 1.5rem;
   }
 
 }
@@ -3443,11 +3443,11 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__slider {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
 
   .testimonials__author {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .testimonials__author span {
@@ -3458,14 +3458,14 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:400px) {
   .testimonials__slider {
-    font-size: 2.1rem;
+    font-size: 1.3rem;
   }
 
 }
 
 @media only screen and (max-width:350px) {
   .testimonials__slider {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
 
 }
@@ -3536,63 +3536,51 @@ html.no-csstransitions .home-content__main {
   align-items: center;
   justify-content: center;
   display: grid;
-  grid-gap: 35px;
+  grid-gap: 45px;
   grid-template-columns: auto auto auto;
 }
-.contact_image{
-  background-image: url(../images/vishnu.jpeg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  border-radius: 10%;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height:350px;
+  width:250px;
+  text-align: center;
+}
+.card h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+.contact_name{
+  font-size: 13;
+}
+.card p{
+  margin-top: 0;
+  color:#000;
 }
 
-.block1{
-  background-image: url(../images/Ajay.jpg);
+p.title {
+  color: grey;
+  font-size: 12px;
+  
 }
-.block2{
-  background-image: url(../images/vishnu.jpeg);
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  background-color: #fa5800;
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
+  letter-spacing: 0;
+  
 }
-.block3{
-  background-image: url(../images/Sreehari.jpg);
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
-.block4{
-  background-image: url(../images/Asish.jpg);
-}
-.block5{
-  background-image: url(../images/Shylesh.jpg);
-}
-.block6{
-  background-image: url(../images/Aparna.jpg);
-}
-.contact_content{
-  height:30%;
-  width:100%;
-  position: absolute;
-  bottom: 0;
-  left:0;
-}
-.contact_name_front{
-  color: #fff;
-  position: relative;
-  bottom: 0;
-}
-.contact_name_back{
-  color:rgb(0, 0, 0);
-}
-.contact_back_image{
-  padding-left:5%;
-  height:65%;
-  width:35%;
-  border-radius: 50%;
-  float: left;
-}
-.contact_back_details{
-  font-weight: 700;
-  justify-content: center;
-  padding-top: 30%;
-}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
@@ -3602,17 +3590,59 @@ html.no-csstransitions .home-content__main {
   .contact_container{
     grid-template-columns: auto auto auto;
   }
+  .card {
+    height:350px;
+    width:250px;
+  }
+  p.title {
+    color: grey;
+    font-size: 12px;
+  } 
+  button {
+    font-size: 10px;  
+  }
+  .card h1{
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width:1100px) {
 
   .contact_container{
     grid-template-columns: auto auto;
   }
+  .card {
+    height:325px;
+    width:225px;
+  }
+  p.title {
+    color: grey;
+    font-size: 11px;
+  } 
+  button {
+    font-size: 9px;  
+  }
+  .card h1{
+    font-size: 23px;
+  }
 }
 @media only screen and (max-width:1000px) {
 
   .contact_container{
     grid-template-columns: auto auto;
+  }
+  .card {
+    height:325px;
+    width:225px;
+  }
+  p.title {
+    color: grey;
+    font-size: 11px;
+  } 
+  button {
+    font-size: 9px;  
+  }
+  .card h1{
+    font-size: 23px;
   }
 
 }
@@ -3622,11 +3652,39 @@ html.no-csstransitions .home-content__main {
   .contact_container{
     grid-template-columns: auto auto ;
   }
+  .card {
+    height:325px;
+    width:225px;
+  }
+  p.title {
+    color: grey;
+    font-size: 11px;
+  } 
+  button {
+    font-size: 9px;  
+  }
+  .card h1{
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width:800px) {
   .contact_container{
     grid-template-columns: auto;
+  }
+  .card {
+    height:300px;
+    width:200px;
+  }
+  p.title {
+    color: grey;
+    font-size: 10px;
+  } 
+  button {
+    font-size: 8px;  
+  }
+  .card h1{
+    font-size: 22px;
   }
 }
 
@@ -3634,11 +3692,33 @@ html.no-csstransitions .home-content__main {
   .contact_container{
     grid-template-columns: auto ;
   }
+  .card {
+    height:300px;
+    width:200px;
+  }
+  p.title {
+    color: grey;
+    font-size: 10px;
+  } 
+  button {
+    font-size: 8px;  
+  }
 }
 
 @media only screen and (max-width:400px) {
   .contact_container{
     grid-template-columns: auto;
+  }
+  .card {
+    height:300px;
+    width:200px;
+  }
+  p.title {
+    color: grey;
+    font-size: 10px;
+  } 
+  button {
+    font-size: 8px;  
   }
 
 }
@@ -3646,6 +3726,17 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:350px) {
   .contact_container{
     grid-template-columns: auto;
+  }
+  .card {
+    height:300px;
+    width:200px;
+  }
+  p.title {
+    color: grey;
+    font-size: 10px;
+  } 
+  button {
+    font-size: 8px;  
   }
 }
 

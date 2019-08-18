@@ -3,7 +3,7 @@
  ----- */
 
 
- 
+
 html {
   font-size: 10px;
 }
@@ -57,14 +57,14 @@ a:active {
  * # typography & general theme styles
  * 
  * ------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #000;
   text-rendering: optimizeLegibility;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1, .h1, h2, .h2, h3, .h3, .h4 {
   margin-top: 6rem;
   margin-bottom: 1.8rem;
 }
@@ -1616,7 +1616,7 @@ body.menu-is-open {
 }
 
 .header-logo img {
-  width: 155px;
+  width: 100%;
   height: 60px;
 }
 
@@ -1900,7 +1900,7 @@ body.menu-is-open {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1200px) {
+ @media only screen and (max-width:1200px) {
   .header-logo {
     left: 60px;
   }
@@ -1969,7 +1969,7 @@ body.menu-is-open {
 
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
   .s-header {
     top: 6px;
   }
@@ -2067,7 +2067,7 @@ body.menu-is-open {
   overflow: hidden;
   position: relative;
   z-index: 4;
-  top: -100px;
+  top: -0px;
 }
 
 .home-content h1 {
@@ -2093,7 +2093,28 @@ body.menu-is-open {
 
 .home-content__main {
   position: relative;
+}
+.title{
   text-align: center;
+}
+.venue{
+  margin-top: 7%;
+  padding-left: 16%;
+}
+.venue .venue_icon{
+  text-align: left;
+  color: #fa5800;
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+
+}
+.venue .college{
+  text-align: left;
+  color: #FFFFFF;
+  padding-left: 1.5%;
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+
 }
 
 /* ------------------------------------------------------------------- 
@@ -2132,49 +2153,6 @@ body.menu-is-open {
 .home-content__button .btn:not(.btn--primary):focus {
   background-color: #080a0c;
   border-color: #080a0c;
-}
-
-/* ------------------------------------------------------------------- 
- * ## home scroll
- * ------------------------------------------------------------------- */
-.home-content__scroll {
-  position: absolute;
-  right: 9.5rem;
-  bottom: 5.4rem;
-  -webkit-transform: rotate(-90deg) translate3d(100%, 50%, 0);
-  -ms-transform: rotate(-90deg) translate3d(100%, 50%, 0);
-  transform: rotate(-90deg) translate3d(100%, 50%, 0);
-  -webkit-transform-origin: right bottom;
-  -ms-transform-origin: right bottom;
-  transform-origin: right bottom;
-}
-
-.home-content__scroll .scroll-link {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .35rem;
-  text-align: left;
-  color: #FFFFFF;
-  position: relative;
-  padding-right: 180px;
-}
-
-.home-content__scroll .scroll-link:hover,
-.home-content__scroll .scroll-link:focus {
-  color: #793ea5;
-}
-
-.home-content__scroll::after {
-  content: "";
-  display: block;
-  background-color: rgba(255, 255, 255, 0.08);
-  width: 150px;
-  height: 1px;
-  position: absolute;
-  right: 0;
-  top: 50%;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2284,7 +2262,6 @@ html.ss-loaded .home-content__main {
 html.no-csstransitions .home-content__main {
   opacity: 1;
 }
-
 /* ------------------------------------------------------------------- 
  * ## home animations
  * ------------------------------------------------------------------- */
@@ -2579,13 +2556,31 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:500px) {
   .home-content h1 {
-    font-size: 7.5rem;
+    font-size: 5rem;
   }
 
   .home-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
-
+  .venue{
+    padding-left: 10%;
+  }
+  .venue .venue_icon{
+    text-align: left;
+    color: #fa5800;
+    font-size: 10px;
+    font-family: "Nunito Sans", sans-serif;
+  
+  }
+  .venue .college{
+    text-align: left;
+    color: #FFFFFF;
+    padding-left: 1.5%;
+    font-size: 10px;
+    font-family: "Nunito Sans", sans-serif;
+  
+  }
+  
 }
 
 @media only screen and (max-width:400px) {
@@ -2593,7 +2588,7 @@ html.no-csstransitions .home-content__main {
     min-height: 630px;
   }
   .home-content{
-    top: -110px !important;
+    top: 0px !important;
     }
   .home-content h1 {
     font-size: 6.5rem;
@@ -2623,14 +2618,61 @@ html.no-csstransitions .home-content__main {
   .home-content__button {
     margin-top: 3.6rem;
   }
-
+  .venue{
+    margin-top: 20%;
+    padding-left: 3%;
+  }
+  .venue .venue_icon{
+    text-align: left;
+    color: #fa5800;
+    font-size: 12px;
+    font-family: "Nunito Sans", sans-serif;
+  
+  }
+  .venue .college{
+    text-align: left;
+    color: #FFFFFF;
+    to
+    padding-left: 1.5%;
+    font-size: 10px;
+    font-family: "Nunito Sans", sans-serif;
+  
+  }
+  
 }
 
 @media only screen and (max-width:350px) {
   .home-content h1 {
     font-size: 6.2rem;
   }
-
+@media only screen and (max-width:320px)
+{
+  .home-content h1 {
+    font-size: 4.6rem !important;
+  }
+  .home-content h3{
+    font-size: 1rem !important;
+  }
+  .venue{
+    margin-top: 7%;
+    padding-left: 3%;
+  }
+  .venue .venue_icon{
+    text-align: left;
+    color: #fa5800;
+    font-size: 9px !important;
+    font-family: "Nunito Sans", sans-serif;
+  
+  }
+  .venue .college{
+    text-align: left;
+    color: #FFFFFF;
+    padding-left: 1.5%;
+    font-size: 9px !important;
+    font-family: "Nunito Sans", sans-serif;
+  
+  }
+}
 }
 
 

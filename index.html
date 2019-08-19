@@ -18,9 +18,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
 
-    <!--Font awesome-->
-    <script src="https://kit.fontawesome.com/4c017459af.js"></script>
-
     
 
 </head>
@@ -100,19 +97,29 @@
 
         <div class="home-content">
 
-            <div class="row home-content__main">
-              <div class="title">  
-                <h1  class="khm">
-                KHM 2k19
-                </h1>
-
-                <h3>
-                <i class="icon-home venue_icon"></i>&nbsp;&nbsp;<span class="college-ven">St. Joseph College Of Engineering & Technology,Palai.</span>             
-               </h3>
-            </div>
-            <div class="date">
-            </div>
-           </div> <!-- end home-content__main -->
+            <div class="rellax d1">
+                <img src="./images/floating/Element1.png" class="floating_triangle1"/>
+          </div>
+          
+          <div class="rellax d2" data-rellax-speed="6">
+                <img src="./images/floating/Element2.png" class="floating_triangle2"/>
+          </div>
+          
+          <div class="rellax d3" data-rellax-speed="8">
+                <img src="./images/floating/Element3.png" class="floating_triangle3"/>
+          </div>
+          
+          <div class="rellax d4" data-rellax-speed="2">
+                <img src="./images/floating/Element4.png" class="floating_triangle4"/>
+          </div>
+          
+          <div class="rellax d5" data-rellax-speed="1">
+                <img src="./images/floating/Element5.png" class="floating_triangle5"/>
+          </div>
+          
+           <div class="rellax d6" data-rellax-speed="4">
+                <img src="./images/floating/Element1.png" class="floating_triangle6"/>
+          </div>
             
         </div> <!-- end home-content -->
 
@@ -579,5 +586,14 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax', {
+            // center: true
+            callback: function(position) {
+                // callback every position change
+                console.log(position);
+            }
+          });
+        </script>
     
     </body>

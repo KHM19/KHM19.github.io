@@ -4,6 +4,78 @@
 
 
 
+     
+ .d1{
+  padding-top:10%;
+  padding-left: 10%;
+  z-index: -100;
+}
+.d2{
+  text-align: right;
+  padding-right:5%;
+  z-index: 1000;
+}
+.d3{
+  padding-top:5%;
+  padding-left: 25%;
+  z-index: 500;
+}
+.d4{
+  text-align: right;
+  padding-right:20%;
+  z-index: -100;
+}
+.d5{
+  padding-top:5%;
+  padding-left: 15%;
+  z-index: 500;
+}
+.d6{
+  /* padding-top:5%; */
+  padding-left: 45%;
+  z-index: 500;
+}
+.d7{
+  padding-top:0%;
+  padding-left: 85%;
+  z-index: 500;
+}
+
+
+.floating_triangle1{
+  width:50px;
+  height:50px; 
+}
+.floating_triangle2{
+  width:40px;
+  height:40px; 
+}
+.floating_triangle3{
+  width:67px;
+  height:67px; 
+}
+.floating_triangle4{
+  width:45px;
+  height:45px; 
+}
+.floating_triangle5{
+  width:70px;
+  height:70px; 
+}
+.floating_triangle5{
+  width:55px;
+  height:55px; 
+}
+.floating_triangle6{
+  width:47px;
+  height:47px; 
+}
+.floating_triangle7{
+  width:52px;
+  height:52px; 
+}
+
+=======
 html {
   font-size: 10px;
 }
@@ -2578,7 +2650,74 @@ html.no-csstransitions .home-content__main {
   .home-content__button {
     margin-top: 3.6rem;
   }
-
+  .floating_triangle1{
+    width:30px;
+    height:30px; 
+  }
+  .floating_triangle2{
+    width:40px;
+    height:40px; 
+  }
+  .floating_triangle3{
+    width:60px;
+    height:60px; 
+  }
+  .floating_triangle4{
+    width:25px;
+    height:25px; 
+  }
+  .floating_triangle5{
+    width:30px;
+    height:30px; 
+  }
+  .floating_triangle6{
+    width:47px;
+    height:47px; 
+  }
+  .floating_triangle7{
+    width:22px;
+    height:22px; 
+  }
+  .d1{
+    padding-top:30%;
+    padding-left: 10%;
+    z-index: -100;
+  }
+  .d2{
+    text-align: right;
+    padding-right:5%;
+    z-index: 1000;
+  }
+  .d3{
+    padding-top:15%;
+    padding-left: 25%;
+    z-index: 500;
+  }
+  .d4{
+    text-align: right;
+    padding-right:20%;
+    z-index: -100;
+  }
+  .d5{
+    padding-top:15%;
+    padding-left: 15%;
+    z-index: 500;
+  }
+  .d6{
+    /* padding-top:5%; */
+    padding-left: 75%;
+    z-index: 500;
+  }
+  .d7{
+    padding-top:-55%;
+    padding-left: 10%;
+    z-index: 500;
+  }
+  .d8{
+    padding-top:5%;
+    padding-left: 65%;
+    z-index: 500;
+  }
 }
 
 @media only screen and (max-width:350px) {
@@ -3819,7 +3958,7 @@ footer a {
 
 .ss-go-top a:hover,
 .ss-go-top a:focus {
-  background-color: #e6ad11;
+  background-color: #fabc13;
 }
 
 /* ------------------------------------------------------------------- 

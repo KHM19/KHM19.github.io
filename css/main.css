@@ -2135,6 +2135,12 @@ body.menu-is-open {
   z-index: 4;
   top: -0px;
 }
+.home-content .title h1{
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  z-index: 2500;
+}
 
 .home-content h1 {
   font-family: "Montserrat", sans-serif;
@@ -2145,16 +2151,49 @@ body.menu-is-open {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
+  z-index: 2500;
+
 }
 
-.home-content h3 {
+.home-content .venue .college-ven,i {
   margin-top: 0rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   line-height: 1.342;
   font-style: normal;
   color: #fa5800;
+  z-index: 1000;
+
+}
+.home-content .button{
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  padding-top: 2%;
+  z-index: 1000;
+
+}
+.home-content .register{
+  border: 2px solid #fa5800;
+  padding:5px;
+  background-color: #fa5800;
+  color: white;
+  z-index: 1000;
+
+}
+.home-content .register:hover{
+ background-color:#ffbd0a;
+ border: 2px solid #ffbd0a;
+}
+.home-content .date{
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  z-index: 1000;
+
 }
 
 .home-content__main {
@@ -2647,7 +2686,7 @@ html.no-csstransitions .home-content__main {
   .d3{
     padding-top:15%;
     padding-left: 25%;
-    z-index: 500;
+    z-index:0;
   }
   .d4{
     text-align: right;
@@ -2674,7 +2713,50 @@ html.no-csstransitions .home-content__main {
     padding-left: 65%;
     z-index: 500;
   }
+  .home-content .title h1{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
   
+  .home-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 1;
+    letter-spacing: -.02em;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .home-content .venue .college-ven,i {
+    margin-top: 0rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.342;
+    font-style: normal;
+    color: #fa5800;
+  }
+  .home-content .button{
+   
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 15%;
+  }
+  .home-content .register{
+    border: 2px solid #fa5800;
+    
+    padding:5px;
+    background-color: #fa5800;
+    color: white;
+  }
+  .home-content .date{
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width:400px) {

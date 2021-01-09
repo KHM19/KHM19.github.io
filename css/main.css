@@ -4243,7 +4243,7 @@ figure.snip1104.hover:before {
   justify-content: center;
   display: grid;
   grid-gap: 45px;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
 }
 .work{
   padding-bottom: 15%;
@@ -4254,7 +4254,7 @@ figure.snip1104.hover:before {
     justify-content: center;
     display: grid;
     grid-gap: 45px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
   }
   figcaption h2{
     color:#fff;
